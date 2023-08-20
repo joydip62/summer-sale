@@ -54,4 +54,4 @@ console.log(discountInputValue);
 //       return disApply;
 // }
 
-// console.log(disApply(500));
+console.log(disApply(500));
