@@ -65,9 +65,10 @@
             <div>
               <h2 class="text-3xl font-semibold text-left mb-3">Kitchenware</h2>
               <div class="grid grid-cols-3 gap-10 p-10">
-
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod1.png" alt="" />
                   </figure>
@@ -101,17 +102,18 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">K. Accessories</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      K. Accessories
+                    </h2>
                     <p><span>39.00</span> TK</p>
                   </div>
-                
                 </div>
 
-                
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod2.png" alt="" />
                   </figure>
@@ -145,17 +147,18 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">K. Accessories</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      K. Accessories
+                    </h2>
                     <p><span>25.00</span> TK</p>
                   </div>
-                
                 </div>
 
-                
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod3.png" alt="" />
                   </figure>
@@ -189,24 +192,23 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">Home Cooker</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      Home Cooker
+                    </h2>
                     <p><span>49.00</span> TK</p>
                   </div>
-                
                 </div>
-
-                
               </div>
             </div>
-            
+
             <div>
               <h2 class="text-3xl font-semibold text-left mb-3">Sportswear</h2>
               <div class="grid grid-cols-3 gap-10 p-10">
-
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod4.png" alt="" />
                   </figure>
@@ -240,17 +242,18 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">Sports Back Cap</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      Sports Back Cap
+                    </h2>
                     <p><span>49.00</span> TK</p>
                   </div>
-                
                 </div>
 
-                
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod5.png" alt="" />
                   </figure>
@@ -284,17 +287,18 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">Full Jersey Set</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      Full Jersey Set
+                    </h2>
                     <p><span>69.00</span> TK</p>
                   </div>
-                
                 </div>
 
-                
-                <div class="card bg-base-100 shadow-md cursor-pointer" onclick="item()">
-
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
+                  onclick="item(this)"
+                >
                   <figure class="bg-[#1111110D] py-3">
                     <img src="/images/prod6.png" alt="" />
                   </figure>
@@ -328,43 +332,39 @@
                     />
                   </div>
 
-                  
                   <div class="card-body">
-                    <h2 class="text-2xl font-semibold text-center">Sports cates</h2>
+                    <h2 class="text-2xl font-semibold text-center">
+                      Sports cates
+                    </h2>
                     <p><span>159.00</span> TK</p>
                   </div>
-                
                 </div>
-
-                
               </div>
             </div>
-
           </div>
 
           <div class="w-full lg:w-3/12 mt-20">
             <div class="bg-white p-5">
-                <h3 class="text-2xl font-semibold">Have coupon?</h3>
-                <input type="text" placeholder="Coupon code" class="border p-2">
-                <button class="bg-[#E527B2] text-white px-3 py-2">Apply</button>
+              <h3 class="text-2xl font-semibold">Have coupon?</h3>
+              <input type="text" placeholder="Coupon code" class="border p-2" id="discount"/>
+              <button class="bg-gray-300 text-white px-3 py-2" id="disApply" disabled>Apply</button>
             </div>
-            
+
             <div class="bg-white p-5 mt-5">
-                <div>
-                    <p class="font-semibold">1. Home Cooker</p>
-                    <p class="font-semibold">1. Home Cooker</p>
-                    <p class="font-semibold">1. Home Cooker</p>
-                </div>
-
-                <div class="mt-5 mb-10">
-                    <p class="font-semibold">Total Price: <span>257.00</span>Tk</p>
-                    <p class="font-semibold">Discount: <span>51.12</span>Tk</p>
-                    <p class="font-semibold">Total: <span>230.00</span>Tk</p>
-                </div>
+              <div id="item-name-list">
                 
-                <button class="bg-[#E527B2] text-white px-5 py-2 w-full">Make Purchase</button>
-            </div>
+              </div>
 
+              <div class="mt-5 mb-10">
+                <p class="font-semibold">Total Price: <span id="total-price">00.00</span> Tk</p>
+                <p class="font-semibold">Discount: <span>51.12</span> Tk</p>
+                <p class="font-semibold">Total: <span>230.00</span> Tk</p>
+              </div>
+
+              <button class="bg-gray-300 text-white px-5 py-2 w-full" id="purchase-btn" disabled>
+                Make Purchase
+              </button>
+            </div>
           </div>
         </div>
       </section>
