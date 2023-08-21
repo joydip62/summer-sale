@@ -8,8 +8,7 @@ function item(target) {
   p.innerText = `${itemCount + 1}. ${itemName}`;
   itemNameList.appendChild(p);
 
-  const itemPriceString =
-    target.childNodes[5].childNodes[3].childNodes[0].innerText;
+  const itemPriceString = target.childNodes[5].childNodes[3].childNodes[0].innerText;
   const itemPrice = parseFloat(itemPriceString);
 
   const totalPrice = document.getElementById("total-price");
@@ -34,11 +33,9 @@ function item(target) {
     purchaseBtn.classList.add("bg-gray-300");
   }
 
-  document
-    .getElementById("discount-apply")
-    .addEventListener("click", function () {
-      const discountCheck = (grandCalculate / 100) * 20;
-      const afterDiscount = grandCalculate - discountCheck;
+  document.getElementById("discount-apply").addEventListener("click", function () {
+      const discountCheck = (totalCalculate / 100) * 20;
+      const afterDiscount = totalCalculate - discountCheck;
       // console.log(disCheck);
       document.getElementById("discount-price").innerText = discountCheck.toFixed(2);
       document.getElementById("grand-price").innerText =
