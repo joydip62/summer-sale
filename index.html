@@ -37,7 +37,7 @@
           class="hero-content flex flex-col md:flex-row-reverse md:justify-evenly md:items-center gap-10 md:p-10 text-center"
         >
           <img
-            src="/images/Summer 1.png"
+            src="./images/Summer 1.png"
             class="max-w-sm rounded-lg shadow-2xl"
           />
           <div class="lg:w-[703px]">
@@ -64,12 +64,15 @@
           <div class="w-full lg:w-9/12 text-center">
             <div>
               <h2 class="text-3xl font-semibold text-left mb-3">Kitchenware</h2>
-              <div class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
-                <div class="card bg-base-100 shadow-md cursor-pointer"
+              <div
+                class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10"
+              >
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod1.png" alt="" />
+                    <img src="./images/prod1.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -109,11 +112,12 @@
                   </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-md cursor-pointer"
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod2.png" alt="" />
+                    <img src="./images/prod2.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -153,11 +157,12 @@
                   </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-md cursor-pointer"
+                <div
+                  class="card bg-base-100 shadow-md cursor-pointer"
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod3.png" alt="" />
+                    <img src="./images/prod3.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -201,13 +206,15 @@
 
             <div>
               <h2 class="text-3xl font-semibold text-left mb-3">Sportswear</h2>
-              <div class="grid grid-rows-1 md:grid-cols-2  lg:grid-cols-3 gap-10 p-10">
+              <div
+                class="grid grid-rows-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-10"
+              >
                 <div
                   class="card bg-base-100 shadow-md cursor-pointer"
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod4.png" alt="" />
+                    <img src="./images/prod4.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -252,7 +259,7 @@
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod5.png" alt="" />
+                    <img src="./images/prod5.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -297,7 +304,7 @@
                   onclick="item(this)"
                 >
                   <figure class="bg-[#1111110D] py-3">
-                    <img src="/images/prod6.png" alt="" />
+                    <img src="./images/prod6.png" alt="" />
                   </figure>
 
                   <div class="rating mx-auto mt-4">
@@ -343,37 +350,74 @@
           <div class="w-full lg:w-3/12 mt-20">
             <div class="bg-white p-5">
               <h3 class="text-2xl font-semibold">Have coupon?</h3>
-              <input type="text" placeholder="Coupon code" class="border p-2 w-8/12" id="discount"/>
-              <button class="bg-gray-300 text-white px-3 py-2" id="discount-apply" disabled>Apply</button>
+              <input
+                type="text"
+                placeholder="Coupon code"
+                class="border p-2 w-8/12"
+                id="discount"
+              />
+              <button
+                class="bg-gray-300 text-white px-3 py-2"
+                id="discount-apply"
+                disabled
+              >
+                Apply
+              </button>
+              <p class="text-red-600 text-sm font-bold hidden" id="error-msg">
+                * Please Enter the valid coupon code
+              </p>
             </div>
 
             <div class="bg-white p-5 mt-5">
-              <div id="item-name-list">
-                
-              </div>
+              <div id="item-name-list"></div>
 
               <div class="mt-5 mb-10 border-t-2 pt-5">
-                <p class="font-semibold">Total Price: <span id="total-price" class="font-normal">00.00</span> Tk</p>
-                <p class="font-semibold">Discount: <span id="discount-price" class="font-normal">00.00</span> Tk</p>
-                <p class="font-semibold">Total: <span id="grand-price" class="font-normal">00.00</span> Tk</p>
+                <p class="font-semibold">
+                  Total Price:
+                  <span id="total-price" class="font-normal">00.00</span> Tk
+                </p>
+                <p class="font-semibold">
+                  Discount:
+                  <span id="discount-price" class="font-normal">00.00</span> Tk
+                </p>
+                <p class="font-semibold">
+                  Total:
+                  <span id="grand-price" class="font-normal">00.00</span> Tk
+                </p>
               </div>
 
-              <button class="btn bg-gray-300 text-white px-5 py-2 w-full" onclick="my_modal_1.showModal()" id="purchase-btn" disabled>
+              <button
+                class="btn bg-gray-300 text-white px-5 py-2 w-full"
+                onclick="my_modal_1.showModal()"
+                id="purchase-btn"
+                disabled
+              >
                 Make Purchase
               </button>
 
-
-<dialog id="my_modal_1" class="modal text-center">
-  <form method="dialog" class="modal-box">
-    <img src="./images/congo.png" alt="" srcset="" class="m-auto">
-    <h3 class="font-bold text-lg">Congratulations</h3>
-    <p class="py-4">Your Purchase the product</p>
-    <div class="modal-action justify-center">
-      <!-- if there is a button in form, it will close the modal -->
-      <button type="submit" class="btn bg-[#E527B2] text-white rounded-md px-4 py-2 text-2xl">Go Home</button>
-    </div>
-  </form>
-</dialog>
+              <dialog id="my_modal_1" class="modal text-center">
+                <form method="dialog" class="modal-box">
+                  <img
+                    src="./images/congo.png"
+                    alt=""
+                    srcset=""
+                    class="m-auto"
+                  />
+                  <h3 class="font-bold text-lg">Congratulations</h3>
+                  <p class="py-4">Your Purchase the product</p>
+                  <div class="modal-action justify-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      type="submit"
+                      class="btn bg-[#E527B2] text-white rounded-md px-4 py-2 text-2xl"
+                      id="go-home"
+                      onclick="goHome()"
+                    >
+                      Go Home
+                    </button>
+                  </div>
+                </form>
+              </dialog>
             </div>
           </div>
         </div>
